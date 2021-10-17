@@ -205,6 +205,12 @@ https://github.com/brndnmtthws/conky
 
 https://github.com/greshake/i3status-rust/blob/master/blocks.md
 
+##### a. debug
+
+```bash
+i3bar -b "bar-0" reload
+```
+
 ### 二、i3-gnome
 
 https://github.com/i3-gnome/i3-gnome/

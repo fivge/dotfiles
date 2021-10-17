@@ -1,0 +1,36 @@
+# idle_bg = "#fdf6e3"     # base3
+# idle_fg = "#586e75"     # base01
+# info_bg = "#268bd2"     # blue
+# info_fg = "#fdf6e3"     # base3
+# good_bg = "#859900"     # green
+# good_fg = "#fdf6e3"     # base3
+# warning_bg = "#b58900"  # yellow
+# warning_fg = "#fdf6e3"  # base3
+# critical_bg = "#dc322f" # red
+# critical_fg = "#fdf6e3" # base3
+# separator = "\ue0b2"
+# separator_bg = "auto"
+# separator_fg = "auto"
+
+# 不确定
+idle_bg = "#E1E1E1" # base3
+idle_fg = "#191919" # base01
+
+info_bg = "#E1E1E1"     # blue
+info_fg = "#191919"     # base3
+good_bg = "#E1E1E1"     # green
+good_fg = "#191919"     # base3
+warning_bg = "#E1E1E1"  # yellow
+warning_fg = "#191919"  # base3
+critical_bg = "#E1E1E1" # red
+critical_fg = "#191919" # base3
+
+# 模块前面的分隔符
+separator = ""
+# 不确定
+separator_bg = "auto"
+separator_fg = "auto"
+
+# 不确定
+alternating_tint_bg = "#000000"
+alternating_tint_fg = "#000000"

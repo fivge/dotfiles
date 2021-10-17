@@ -1,0 +1,169 @@
+[theme]
+file = "theme-custom.toml"
+
+[icons]
+name = "awesome5"
+
+[[block]]
+block = "backlight"
+invert_icons = true
+# TODO 亮度icon调整
+# https://github.com/greshake/i3status-rust/blob/master/doc/blocks.md#setting-brightness-with-the-mouse-wheel
+
+# 屏幕 亮度 分辨率
+# 太卡
+# [[block]]
+# block = "xrandr"
+# icons = true
+# resolution = true
+# interval = 2
+
+# [[block]]
+# block = "cpu"
+# interval = 1
+# format = "{barchart}{utilization}"
+# format = "{barchart}"
+# 监测没啥用
+
+# [[block]]
+# block = "disk_space"
+# path = "/"
+# info_type = "used"
+# format = "{icon} {used}/{total} ({available} free)"
+# 监测没啥用
+
+# [[block]]
+# block = "docker"
+# interval = 2
+# format = "{running}/{total}"
+# TODO 以后可以用
+
+# [[block]]
+# block = "focused_window"
+# max_width = 50
+# show_marks = "visible"
+# 监测没啥用
+
+# [[block]]
+# block = "github"
+# format = "{total}|{author}|{comment}|{mention}|{review_requested}"
+# 放浏览器/通知比较好
+
+# [[block]]
+# block = "hueshift"
+# hue_shifter = "redshift"
+# step = 50
+# click_temp = 3500
+
+# [[block]]
+# block = "load"
+# format = "1min avg: {1m}"
+# interval = 1
+
+
+# [[block]]
+# block = "memory"
+# format_mem = "{mem_used}/{mem_total}({mem_used_percents})"
+# format_swap = "{swap_used}/{swap_total}({swap_used_percents})"
+# display_type = "memory"
+# icons = true
+# clickable = true
+# interval = 5
+# warning_mem = 80
+# warning_swap = 80
+# critical_mem = 95
+# critical_swap = 95
+
+# [[block]]
+# block = "net"
+# device = "wlp0s20f3"
+# ip = true
+# speed_up = true
+# speed_down = true
+# # format = "{ip} {speed_up} {speed_down}"
+
+[[block]]
+block = "net"
+device = "wlp0s20f3"
+# format = "{ssid} {signal_strength} {ip} {speed_down;K*b} {graph_down;K*b}"
+# format = "{ssid} {speed_down;K*b}"
+format = "{ssid}"
+interval = 30
+# TODO wifi改成类似于mac/Android的，点击下拉，再点击进入到设置面板
+
+# [[block]]
+# block = "networkmanager"
+# on_click = "alacritty -e nmtui"
+# interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
+# interface_name_include = []
+
+
+# [[block]]
+# block = "sound"
+
+[[block]]
+block = "sound"
+# format = "{output_name} {volume}"
+format = "{volume}"
+# [block.mappings]
+# "alsa_output.usb-Harman_Multimedia_JBL_Pebbles_1.0.0-00.analog-stereo" = "🔈"
+# "alsa_output.pci-0000_00_1f.3.analog-stereo" = "🔈"
+# "alsa_output.pci-0000_00_1b.0.analog-stereo" = "🎧"
+## TODO
+
+[[block]]
+block = "battery"
+driver = "upower"
+format = "{percentage} {power} {time}"
+# TODO icon显示不全
+
+[[block]]
+block = "time"
+# format = "%Y/%m/%d(%b) %H:%M"
+# format = "%Y/%m/%d %H:%M"
+format = "%H:%M"
+interval = 30
+
+# https://github.com/greshake/i3status-rust/blob/master/doc/blocks.md#notify
+
+# [[block]]
+# block = "notmuch"
+# query = "tag:alert and not tag:trash"
+# threshold_warning = 1
+# threshold_critical = 10
+# name = "A"
+# ???
+
+# https://github.com/greshake/i3status-rust/blob/master/doc/blocks.md#nvidia-gpu
+
+# [[block]]
+# block = "pacman"
+# interval = 600
+# format = "{pacman} updates available"
+# format_singular = "{pacman} update available"
+# format_up_to_date = "system up to date"
+# critical_updates_regex = "(linux|linux-lts|linux-zen)"
+# # pop-up a menu showing the available updates. Replace wofi with your favourite menu command.
+# on_click = "fakeroot pacman -Qu --dbpath /tmp/checkup-db-yourusername/ | wofi --show dmenu"
+# TODO 完善下
+
+# https://github.com/greshake/i3status-rust/blob/master/doc/blocks.md#speed-test
+
+# [[block]]
+# block = "custom"
+# command = ''' cat /sys/class/thermal/thermal_zone0/temp | awk '{printf("%.1f\n",$1/1000)}' '''
+
+# [[block]]
+# block = "custom"
+# cycle = ["echo ON", "echo OFF"]
+# on_click = "cowsay hello"
+# interval = 1
+
+# https://github.com/greshake/i3status-rust/tree/master/examples
+
+[[block]]
+block = "custom"
+command = "echo \uf011"
+# on_click = "systemctl `echo -e 'suspend\npoweroff\nreboot' | dmenu`"
+on_click = "~/.dotfiles/bin/powermenu/powermenu.sh"
+interval = "once"

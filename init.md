@@ -123,9 +123,14 @@ fc-cache -vf
 - <https://github.com/microsoft/cascadia-code>
 - SF Pro
   <https://developer.apple.com/fonts/>
+- https://github.com/ryanoasis/nerd-fonts
 - Font Awesome
   https://fontawesome.com/
   https://archlinux.org/packages/community/any/ttf-font-awesome/
+- md
+  https://aur.archlinux.org/packages/ttf-material-design-icons/
+  https://github.com/Templarian/MaterialDesign-Font
+  https://github.com/google/material-design-icons
 - noto-emoji
   https://github.com/googlefonts/noto-emoji
 - https://fonts.google.com
@@ -184,8 +189,6 @@ https://theme.typora.io/
 ```bash
 yay -S pick-colour-picker
 ```
-
-## [beauty](./beauty.md)
 
 ## Tools
 
