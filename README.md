@@ -1,8 +1,6 @@
 # dotfiles
 
-## init
-
-[init](./init.md)
+## [init](./init.md)
 
 ## config
 
@@ -33,10 +31,6 @@ ln -s ~/.dotfiles/i3/config ~/.config/i3/
 
 `~/.local/share/fonts`
 
-## beauty
+## [beauty](./beauty.md)
 
-[beauty](./beauty.md)
-
-## cheat
-
-[cheat](./cheat.md)
+## [cheat](./cheat.md)
